@@ -1,0 +1,1 @@
+Standard chat plugin backed by LiteLLM to be compatible with a wide range of large language models. <a class="text-sm underline hover:text-primary" href="https://promptpanel.com/documentation/universal-llm-advanced/" target="_new">More Info</a>

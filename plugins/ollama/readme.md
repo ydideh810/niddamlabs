@@ -1,0 +1,1 @@
+Ollama local / offline chat model. Utilizes the management integration with Ollama - requires the `PROMPT_OLLAMA_HOST` environment variable set on your server. <a class="text-sm underline hover:text-primary" href="https://promptpanel.com/documentation/ollama-local-model/" target="_new">More Info</a>
