@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "ZenDots-Regular";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/static/promptpanel/fonts/ZenDots-Regular.ttf") format("ttf");
+}
+[x-cloak] {
+  display: none !important;
+}
+body,
+html {
+  font-size: 14px;
+}
+.prose
+  :where(code):not(
+    :where([class~="not-prose"], [class~="not-prose"] *)
+  )::before,
+.prose
+  :where(code):not(
+    :where([class~="not-prose"], [class~="not-prose"] *)
+  )::after {
+  content: "" !important;
+}
