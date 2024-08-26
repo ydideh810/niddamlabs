@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Niddam-Labs</title>
+    {% include "components/head.html" %}
+  </head>
+  <body>
+    <!-- Stores -->
+    <script is:inline src="/static/plugin_default/stores/script.js"></script>
+    {% if capabilities.panel_frame_url %}
+    <iframe src="{{ capabilities.panel_frame_url }}" class="w-screen h-screen bg-stone-900"></iframe>
+    {% else %}
+    <div x-data="pluginState()" x-init="redirectPanel()"></div>
+    {% endif %}
+  </body>
+</html>
