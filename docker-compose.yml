@@ -14,11 +14,11 @@ services:
     image: ollama/ollama:latest
     container_name: ollama
     restart: always
-      PROMPT_PG_HOST: postgres-bfrh.railway.internal
+      PROMPT_PG_HOST: meticulous-empathy.railway.internal
       PROMPT_PG_PORT: 5432
       PROMPT_PG_DBNAME: railway
       PROMPT_PG_USER: postgres
-      PROMPT_PG_PASS: XZRXCjXXPBxwRngcOaTLPAwTSvbBfIgB
+      PROMPT_PG_PASS: ogyjGyGdjNxDrVoaKsUQvZkEGzyvOszI
     depends_on:
       postgres_db:
         condition: service_healthy
@@ -29,7 +29,7 @@ services:
     environment:
       POSTGRES_DB: railway
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: XZRXCjXXPBxwRngcOaTLPAwTSvbBfIgB
+      POSTGRES_PASSWORD: ogyjGyGdjNxDrVoaKsUQvZkEGzyvOszI
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
       interval: 10s
