@@ -101,12 +101,12 @@
 
     <form class="mb-3" @submit.prevent="$store.loginStore.loginUser()">
       <div class="mb-3">
-        <label for="username" class="block text-stone-500 mb-1">Username</label>
-        <input x-model="$store.loginStore.username" type="username" required id="username" name="username" placeholder="Username..." class="cursor-text w-full px-2.5 h-9 rounded-md bg-white shadow-sm border border-stone-400/50 outline-none transition placeholder:text-stone-400 hover:border-stone-400/70 hover:shadow focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/10" />
+        <label for="username" class="block text-stone-50 mb-1">Username</label>
+        <input x-model="$store.loginStore.username" type="username" required id="username" name="username" placeholder="Username..." class="cursor-text w-full px-2.5 h-9 rounded-md bg-white shadow-sm border border-stone-400/50 outline-none text-red-900 transition placeholder:text-red-900 hover:border-stone-400/70 hover:shadow focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/10" />
       </div>
       <div class="mb-3">
-        <label for="password" class="block text-stone-500 mb-1">Password</label>
-        <input x-model="$store.loginStore.password" type="password" required id="password" name="password" placeholder="Password..." class="cursor-text w-full px-2.5 h-9 rounded-md bg-white shadow-sm border border-stone-400/50 outline-none transition placeholder:text-stone-400 hover:border-stone-400/70 hover:shadow focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/10" />
+        <label for="password" class="block text-stone-50 mb-1">Password</label>
+        <input x-model="$store.loginStore.password" type="password" required id="password" name="password" placeholder="Password..." class="cursor-text w-full px-2.5 h-9 rounded-md bg-white shadow-sm border border-stone-400/50 outline-none text-red-900 transition placeholder:text-red-900 hover:border-stone-400/70 hover:shadow focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/10" />
       </div>
       <button type="submit" class="flex items-center justify-center w-full font-semibold bg-primary px-2.5 h-10 rounded-md shadow-sm text-stone-50 transition duration-500 hover:shadow-lg focus:shadow-none focus:opacity-80">Sign in</button>
     </form>
